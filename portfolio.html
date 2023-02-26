@@ -19,334 +19,366 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://kit.fontawesome.com/37e9dcf831.js" crossorigin="anonymous"></script>
-</head>
+    <style>
+        .filterDiv {
+            display: none;
+        }
 
-<body id="home">
-    <!-- Start Header Section -->
-    <header class="st-site-header st-style1 st-sticky-header">
-        <div class="st-main-header">
-            <div class="container">
-                <div class="st-main-header-in">
-                    <div class="st-main-header-left">
-                        <a class="st-site-branding" href="index.html"><img src="assets/img/logo.png" alt="Davis"></a>
-                    </div>
-                    <div class="st-main-header-right">
-                        <div class="st-nav">
-                            <ul class="st-nav-list st-onepage-nav">
-                                <li><a href="index.html#home">Home</a></li>
-                                <li><a href="index.html#about">About</a></li>
-                                <li><a href="index.html#resume">Resume</a></li>
-                                <li><a href="index.html#portfolio">Portfolio</a></li>
-                                <li><a href="index.html#blog">Blog</a></li>
-                                <li><a href="index.html#contact">Contact</a></li>
-                            </ul>
-                            <div class="sp-phone">
-                                <svg viewBox="0 0 513.64 513.64">
-                                    <g>
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+    </style>
+
+<body>
+    </head>
+
+    <body id="home">
+        <!-- Start Header Section -->
+        <header class="st-site-header st-style1 st-sticky-header">
+            <div class="st-main-header">
+                <div class="container">
+                    <div class="st-main-header-in">
+                        <div class="st-main-header-left">
+                            <a class="st-site-branding" href="index.html"><img src="assets/img/logo.png"
+                                    alt="Davis"></a>
+                        </div>
+                        <div class="st-main-header-right">
+                            <div class="st-nav">
+                                <ul class="st-nav-list st-onepage-nav">
+                                    <li><a href="index.html#home">Home</a></li>
+                                    <li><a href="index.html#about">About</a></li>
+                                    <li><a href="index.html#resume">Resume</a></li>
+                                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                                    <li><a href="index.html#web">Web Development</a></li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+                                <div class="sp-phone">
+                                    <svg viewBox="0 0 513.64 513.64">
                                         <g>
-                                            <path
-                                                d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z" />
+                                            <g>
+                                                <path
+                                                    d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z" />
+                                            </g>
                                         </g>
-                                    </g>
-                                </svg>
-                                <div class="sp-phone-no">+1 971 234 1508</div>
+                                    </svg>
+                                    <div class="sp-phone-no">+1 971 234 1508</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- End Header Section -->
+        </header>
+        <!-- End Header Section -->
 
 
-    <!-- Start Portfolio Seciton -->
-    <section id="portfolio">
-        <div class="st-height-b100 st-height-lg-b80"></div>
-        <div class="container">
-            <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">PORTFOLIOS</h4>
-                <h2 class="st-section-heading-subtitle">PORTFOLIOS</h2>
+        <!-- Start Portfolio Seciton -->
+        <section id="portfolio">
+            <div class="st-height-b100 st-height-lg-b80"></div>
+            <div class="container">
+                <div class="st-section-heading st-style1">
+                    <h4 class="st-section-heading-title">PORTFOLIOS</h4>
+                    <h2 class="st-section-heading-subtitle">PORTFOLIOS</h2>
+                </div>
+                <div class="st-height-b25 st-height-lg-b25"></div>
             </div>
-            <div class="st-height-b25 st-height-lg-b25"></div>
-        </div>
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-            <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-            <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-            <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="assets/portfolio/img/3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <div class="st-portfolio-btn">
-                        <a href="#" class="st-btn st-style1 st-color1">Load More</a>
-                    </div>
-                </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
             </div>
-        </div>
-        <div class="st-height-b100 st-height-lg-b80"></div>
-    </section>
-    <!-- End Portfolio Seciton -->
-
-    <!-- Start Contact Seciton -->
-    <section id="contact" class="st-dark-bg">
-        <div class="st-height-b100 st-height-lg-b80"></div>
-        <div class="container">
-            <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">CONTACT ME</h4>
-                <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
-            </div>
-            <div class="st-height-b25 st-height-lg-b25"></div>
-        </div>
-
-        <!-- Contact Container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="st-contact-title">Send me an Email</h3>
-                    <div id="st-alert"></div>
-                    <form action="#" method="POST" class="st-contact-form" id="contact-form">
-                        <div class="st-form-field">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="st-form-field">
-                            <input type="text" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="st-form-field">
-                            <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
-                        </div>
-                        <div class="st-form-field">
-                            <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">Send
-                            message</button>
-                    </form>
-                </div>
-                <div class="st-height-b0 st-height-lg-b30"></div>
-
-                <div class="col-lg-6">
-                    <div class="st-height-b0 st-height-lg-b40"></div>
-                    <h3 class="st-contact-title">Contact Info</h3>
-                    <div class="st-contact-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus
-                        sed
-                        suscipit feugiat.
-                    </div>
-                    <div class="st-contact-info-wrap">
-                        <div class="st-single-contact-info">
-                            <i class="fas fa-envelope"></i>
-                            <div class="st-single-info-details">
-                                <h4>Email</h4>
-                                <a href="mailto:nebril.jorel@gmail.com">nebril.jorel@gmail.com</a>
-                                <a href="mailto:jorelnebril@gmail.com">jorelnebril@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="st-single-contact-info">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="st-single-info-details">
-                                <h4>Phone</h4>
-                                <span>+63 976 038 4459</span>
-                                <span>+63 935 793 4062</span>
-                            </div>
-                        </div>
-                        <div class="st-single-contact-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="st-single-info-details">
-                                <h4>Address</h4>
-                                <span>Manila, <br>Philippines</span>
-                            </div>
-                        </div>
-                        <div class="st-social-info">
-                            <div class="st-social-text">Visite my social profile and get connected</div>
-                            <div class="st-social-link">
-                                <a href="#" class="st-social-btn">
-                                    <span class="st-social-icon"><i class="fa fa-check"></i></i></span>
-                                    <span class="st-icon-name">Foundit</span>
-                                </a>
-                                <a href="#" class="st-social-btn">
-                                    <span class="st-social-icon"><i class="fab fa-github"></i></i></span>
-                                    <span class="st-icon-name">Github</span>
-                                </a>
-                                <a href="#" class="st-social-btn">
-                                    <span class="st-social-icon"><i class="fab fa-facebook"></i></span>
-                                    <span class="st-icon-name">Twitter</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/jorel-nebril/" target="_blank"
-                                    class="st-social-btn active">
-                                    <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
-                                    <span class="st-icon-name">LinkedIn</span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="st-portfolio-single st-style1 st-lightgallery">
+                            <div class="st-portfolio-item">
+                                <a href="assets/portfolio/img/3.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                                    <div class="st-portfolio-img st-zoom-in">
+                                        <img src="assets/portfolio/img/3.jpg" alt="portfolio">
+                                    </div>
+                                    <div class="st-portfolio-item-hover">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Design / Marketing</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <div class="st-portfolio-btn">
+                            <a href="#" class="st-btn st-style1 st-color1">Load More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="st-height-b100 st-height-lg-b80"></div>
-    </section>
-    <!-- End Contact Seciton -->
+            <div class="st-height-b100 st-height-lg-b80"></div>
+        </section>
+        <!-- End Portfolio Seciton -->
 
-    <!-- Start Footer Seciton -->
-    <footer>
-        <div class="container">
-            <div class="st-copyright-wrap text-center">
-                <div class="st-copyright-text">© 2020. Designed by Laralink. All right reserved.</div>
+        <!-- Start Contact Seciton -->
+        <section id="contact" class="st-dark-bg">
+            <div class="st-height-b100 st-height-lg-b80"></div>
+            <div class="container">
+                <div class="st-section-heading st-style1">
+                    <h4 class="st-section-heading-title">CONTACT ME</h4>
+                    <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
+                </div>
+                <div class="st-height-b25 st-height-lg-b25"></div>
             </div>
-        </div>
-    </footer>
-    <!-- End Footer Seciton -->
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/jquery.slick.min.js"></script>
-    <script src="assets/js/lightgallery.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-        }
+            <!-- Contact Container -->
 
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
-        }
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="st-contact-title">Send me an Email</h3>
+                        <div id="st-alert"></div>
+                        <form action="#" method="POST" class="st-contact-form" id="contact-form">
+                            <div class="st-form-field">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="st-form-field">
+                                <input type="text" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="st-form-field">
+                                <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
+                            </div>
+                            <div class="st-form-field">
+                                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">Send
+                                message</button>
+                        </form>
+                    </div>
+                    <div class="st-height-b0 st-height-lg-b30"></div>
 
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    <div class="col-lg-6">
+                        <div class="st-height-b0 st-height-lg-b40"></div>
+                        <h3 class="st-contact-title">Contact Info</h3>
+                        <div class="st-contact-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id
+                            faucibus
+                            sed
+                            suscipit feugiat.
+                        </div>
+                        <div class="st-contact-info-wrap">
+                            <div class="st-single-contact-info">
+                                <i class="fas fa-envelope"></i>
+                                <div class="st-single-info-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:nebril.jorel@gmail.com">nebril.jorel@gmail.com</a>
+                                    <a href="mailto:jorelnebril@gmail.com">jorelnebril@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="st-single-contact-info">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="st-single-info-details">
+                                    <h4>Phone</h4>
+                                    <span>+63 976 038 4459</span>
+                                    <span>+63 935 793 4062</span>
+                                </div>
+                            </div>
+                            <div class="st-single-contact-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="st-single-info-details">
+                                    <h4>Address</h4>
+                                    <span>Manila, <br>Philippines</span>
+                                </div>
+                            </div>
+                            <div class="st-social-info">
+                                <div class="st-social-text">Visite my social profile and get connected</div>
+                                <div class="st-social-link">
+                                    <a href="#" class="st-social-btn">
+                                        <span class="st-social-icon"><i class="fa fa-check"></i></i></span>
+                                        <span class="st-icon-name">Foundit</span>
+                                    </a>
+                                    <a href="#" class="st-social-btn">
+                                        <span class="st-social-icon"><i class="fab fa-github"></i></i></span>
+                                        <span class="st-icon-name">Github</span>
+                                    </a>
+                                    <a href="#" class="st-social-btn">
+                                        <span class="st-social-icon"><i class="fab fa-facebook"></i></span>
+                                        <span class="st-icon-name">Twitter</span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/jorel-nebril/" target="_blank"
+                                        class="st-social-btn active">
+                                        <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+                                        <span class="st-icon-name">LinkedIn</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-height-b100 st-height-lg-b80"></div>
+        </section>
+        <!-- End Contact Seciton -->
+
+        <!-- Start Footer Seciton -->
+        <footer>
+            <div class="container">
+                <div class="st-copyright-wrap text-center">
+                    <div class="st-copyright-text">© 2023. JOREL\\COLE\\NEBRIL. All right reserved.</div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Seciton -->
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/jquery.slick.min.js"></script>
+        <script src="assets/js/lightgallery.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/particles.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
                 }
             }
-            element.className = arr1.join(" ");
-        }
 
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script>
-</body>
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+    </body>
 
 </html>
