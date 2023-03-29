@@ -1182,7 +1182,38 @@
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Contact Seciton -->
+  <script>
+    // Define the folder location
+    const folderLocation = '/assets/img/AgelessLX/';
 
+    // Fetch the folder contents as text
+    fetch(folderLocation)
+      .then(response => response.text())
+      .then(htmlText => {
+        // Convert the HTML text into a DOM document
+        const htmlDoc = new DOMParser().parseFromString(htmlText, 'text/html');
+
+        // Get all the "a" tags in the document
+        const fileLinks = htmlDoc.querySelectorAll('a');
+
+        // Create a new div element to hold the images
+        const imagesDiv = document.createElement('div');
+
+        // Loop through each link and create a new img element
+        fileLinks.forEach(function (link) {
+          const fileName = link.textContent;
+          if (fileName.endsWith('.jpg') || fileName.endsWith('.png') || fileName.endsWith('.gif')) {
+            const img = document.createElement('img');
+            img.src = folderLocation + fileName;
+            imagesDiv.appendChild(img);
+          }
+        });
+
+        // Add the imagesDiv to the document body
+        document.body.appendChild(imagesDiv);
+      })
+      .catch(error => console.error(error))
+  </script>
   <!-- Start Footer Seciton -->
   <footer>
     <div class="container">
