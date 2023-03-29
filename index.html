@@ -894,15 +894,17 @@
             <div class="slick-slide-in">
               <div class="st-testimonial st-style1 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 <div class="st-testimonial-text">
-                  <p>“Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad
-                    teimpor sittem elit inuning utsed sittem do eiusmod.”</p>
+                  <p>“I am so grateful to have worked with Jorel Nebril. He's made the process of creating a website so
+                    easy and stress-free, even for someone like me who isn't familiar with web development and design.
+                    He's were patient, communicative, and delivered exceptional work. I couldn't be happier with the end
+                    result!”</p>
                   <div class="st-quote"><img src="assets/icon/quote.png" alt="quote"></div>
                 </div>
                 <div class="st-testimonial-info">
                   <div class="st-testimonial-img"><img src="assets/img/client/client1.png" alt="client1"></div>
                   <div class="st-testimonial-meta">
                     <h4 class="st-testimonial-name">Richard Miles</h4>
-                    <div class="st-testimonial-designation">Chairman</div>
+                    <div class="st-testimonial-designation">CEO</div>
                   </div>
                 </div>
               </div>
@@ -911,15 +913,16 @@
             <div class="slick-slide-in">
               <div class="st-testimonial st-style1 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 <div class="st-testimonial-text">
-                  <p>“Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad
-                    teimpor sittem elit inuning utsed sittem do eiusmod.”</p>
+                  <p>“I had a great experience working with Jorel. he was professional, detail-oriented, and committed
+                    to delivering high-quality work. Our website turned out even better than we had hoped, and it's all
+                    thanks to he's hard work and expertise”</p>
                   <div class="st-quote"><img src="assets/icon/quote.png" alt="quote"></div>
                 </div>
                 <div class="st-testimonial-info">
                   <div class="st-testimonial-img"><img src="assets/img/client/client2.png" alt="client2"></div>
                   <div class="st-testimonial-meta">
-                    <h4 class="st-testimonial-name">Vesta Shufelt</h4>
-                    <div class="st-testimonial-designation">Executive Director</div>
+                    <h4 class="st-testimonial-name">Peter Adams</h4>
+                    <div class="st-testimonial-designation">Owner, Brighton Bags</div>
                   </div>
                 </div>
               </div>
@@ -928,15 +931,16 @@
             <div class="slick-slide-in">
               <div class="st-testimonial st-style1 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 <div class="st-testimonial-text">
-                  <p>“Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad
-                    teimpor sittem elit inuning utsed sittem do eiusmod.”</p>
+                  <p>“I highly recommend Nebril for his exceptional design skills. He's truly understood our brand and
+                    created designs that perfectly captured our vision. He's attention to detail and ability to balance
+                    creativity with functionality is impressive.”</p>
                   <div class="st-quote"><img src="assets/icon/quote.png" alt="quote"></div>
                 </div>
                 <div class="st-testimonial-info">
                   <div class="st-testimonial-img"><img src="assets/img/client/client3.png" alt="client3"></div>
                   <div class="st-testimonial-meta">
-                    <h4 class="st-testimonial-name">Joseph Alves</h4>
-                    <div class="st-testimonial-designation">Managing Director</div>
+                    <h4 class="st-testimonial-name">Dan Perichino</h4>
+                    <div class="st-testimonial-designation">Creative Director</div>
                   </div>
                 </div>
               </div>
@@ -1072,7 +1076,7 @@
                     <span class="st-post-date-divider">|</span>
                     <span class="st-post-publish-date">27-09-2020</span>
                   </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a
+                  <h4 class="st-post-title"><a href="/">Were there any mistakes you’ve made as a
                       designer</a></h4>
                 </div>
               </div>
@@ -1127,8 +1131,8 @@
           <div class="st-height-b0 st-height-lg-b40"></div>
           <h3 class="st-contact-title">Contact Info</h3>
           <div class="st-contact-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed
-            suscipit feugiat.
+            If you're in need of a skilled web developer to bring your online vision to life, don't hesitate to contact
+            me.
           </div>
           <div class="st-contact-info-wrap">
             <div class="st-single-contact-info">
@@ -1182,38 +1186,6 @@
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Contact Seciton -->
-  <script>
-    // Define the folder location
-    const folderLocation = '/assets/img/AgelessLX/';
-
-    // Fetch the folder contents as text
-    fetch(folderLocation)
-      .then(response => response.text())
-      .then(htmlText => {
-        // Convert the HTML text into a DOM document
-        const htmlDoc = new DOMParser().parseFromString(htmlText, 'text/html');
-
-        // Get all the "a" tags in the document
-        const fileLinks = htmlDoc.querySelectorAll('a');
-
-        // Create a new div element to hold the images
-        const imagesDiv = document.createElement('div');
-
-        // Loop through each link and create a new img element
-        fileLinks.forEach(function (link) {
-          const fileName = link.textContent;
-          if (fileName.endsWith('.jpg') || fileName.endsWith('.png') || fileName.endsWith('.gif')) {
-            const img = document.createElement('img');
-            img.src = folderLocation + fileName;
-            imagesDiv.appendChild(img);
-          }
-        });
-
-        // Add the imagesDiv to the document body
-        document.body.appendChild(imagesDiv);
-      })
-      .catch(error => console.error(error))
-  </script>
   <!-- Start Footer Seciton -->
   <footer>
     <div class="container">
