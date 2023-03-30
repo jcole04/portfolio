@@ -914,7 +914,32 @@
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Portfolio Seciton -->
+  <script>
+    const path = 'assets/portfolio/img/';
 
+    // Set an array of image file extensions to filter by
+    const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+
+    // Loop through the folder using the Fetch API
+    fetch(path)
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const imageElements = doc.querySelectorAll('img');
+        imageElements.forEach(imageElement => {
+          const imageUrl = imageElement.src;
+          if (allowedExtensions.some(ext => imageUrl.endsWith(ext))) {
+            // Create a new image element with the same source
+            const newImg = document.createElement('img');
+            newImg.src = imageUrl;
+
+            // Append the new image element to a container element
+            document.querySelector('#container').appendChild(newImg);
+          }
+        });
+      });
+  </script>
   <!-- Start Review Seciton -->
   <section class="st-dark-bg">
     <div class="st-height-b100 st-height-lg-b80"></div>
