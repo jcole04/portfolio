@@ -12,6 +12,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/JorelNebril.ico" />
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/flexmasonry.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.css" />
   <link rel="stylesheet" href="assets/css/slick.css" />
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://kit.fontawesome.com/37e9dcf831.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="assets/css/flexmasonry.js"></script>
 </head>
 
 <body id="home" class="st-get-sidebar">
@@ -596,8 +598,42 @@
       <div class="st-height-b25 st-height-lg-b25"></div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
+      <style>
+        .flexmasonry-responsive {
+          columns: 3;
+        }
+
+        @media (max-width: 1200px) {
+          .flexmasonry-responsive {
+            columns: 3;
+          }
+        }
+
+        @media (max-width: 992px) {
+          .flexmasonry-responsive {
+            columns: 2;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .flexmasonry-responsive {
+            columns: 2;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .flexmasonry-responsive {
+            columns: 1;
+          }
+        }
+
+        .flexmasonry-item {
+          break-inside: avoid;
+        }
+
+      </style>
+      <div class="flexmasonry-responsive">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/BlackFriday/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -626,7 +662,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/AgelessLX/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -654,7 +690,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Vitality/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -682,7 +718,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Sweatblock/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -711,7 +747,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Beldt/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -740,7 +776,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/AnnieMak/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -769,7 +805,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/AstroFlav/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -798,7 +834,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/CarboFix/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -827,7 +863,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/DavidSchloss/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -856,7 +892,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Dryerboost/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -885,7 +921,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Earpeace/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -914,7 +950,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Elly/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -942,7 +978,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/FixmyGut/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -970,7 +1006,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="flexmasonry-item">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Georgia Foster/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -999,7 +1035,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6">
+=======
+        <div class="flexmasonry-item">
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/GoKeto/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -1028,7 +1068,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6">
+=======
+        <div class="flexmasonry-item">
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Harmonium/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -1057,10 +1101,17 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Insurance/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+=======
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Insurance/" class="st-portfolio st-zoom st-lightbox-item">
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
                 <div class="st-portfolio-img st-zoom-in">
                   <img src="assets/portfolio/img/Insurance/File1.jpg" alt="Insurance">
                 </div>
@@ -1086,7 +1137,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6">
+=======
+        <div class="flexmasonry-item">
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Kasandrinos/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -1115,7 +1170,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6">
+=======
+        <div class="flexmasonry-item">
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/portfolio/img/Katy/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -1144,9 +1203,532 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-lg-12 text-center">
           <div class="st-portfolio-btn">
             <a href="/portfolio.html" class="st-btn st-style1 st-color1">Load More</a>
+=======
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Menopause/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Menopause/File1.jpg" alt="Menopause">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Menopause</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 10; i++) {
+
+                  let name = "Menopause";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Modenm/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Modenm/File1.jpg" alt="Modenm">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Modenm</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 6; i++) {
+
+                  let name = "Modenm";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/MyGolfingStore/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/MyGolfingStore/File1.jpg" alt="MyGolfingStore">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>MyGolfingStore</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 7; i++) {
+
+                  let name = "MyGolfingStore";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Naomi/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Naomi/File1.jpg" alt="Naomi">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Naomi</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 6; i++) {
+
+                  let name = "Naomi";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Nush/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Nush/File1.jpg" alt="Nush">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Nush</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 39; i++) {
+
+                  let name = "Nush";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/nut/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/nut/File1.jpg" alt="nut">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>nut</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 9; i++) {
+
+                  let name = "nut";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/PBT/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/PBT/File1.jpg" alt="PBT">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>PBT</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 6; i++) {
+
+                  let name = "PBT";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Prime/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Prime/File1.jpg" alt="Prime">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Prime</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 6; i++) {
+
+                  let name = "Prime";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Purathrive/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Purathrive/File1.jpg" alt="Purathrive">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Purathrive</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 9; i++) {
+
+                  let name = "Purathrive";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Robert/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Robert/File1.jpg" alt="Robert">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Robert</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 19; i++) {
+
+                  let name = "Robert";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Robyn/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Robyn/File1.jpg" alt="Robyn">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Robyn</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 8; i++) {
+
+                  let name = "Robyn";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Sane/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Sane/File1.jpg" alt="Sane">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Sane</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 32; i++) {
+
+                  let name = "Sane";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Sheep2Shark/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Sheep2Shark/File1.jpg" alt="Sheep2Shark">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Sheep2Shark</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 21; i++) {
+
+                  let name = "Sheep2Shark";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Sleep/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Sleep/File1.jpg" alt="Sleep">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Sleep</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 11; i++) {
+
+                  let name = "Sleep";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Smile/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Smile/File1.jpg" alt="Smile">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Smile</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 9; i++) {
+
+                  let name = "Smile";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Well/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Well/File1.jpg" alt="Well">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Well</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 15; i++) {
+
+                  let name = "Well";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/Thumbnail/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/Thumbnail/File1.jpg" alt="Thumbnail">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>Thumbnail</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 24; i++) {
+
+                  let name = "Thumbnail";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="flexmasonry-item">
+          <div class="st-portfolio-single st-style1 st-lightgallery">
+            <div class="st-portfolio-item">
+              <a href="assets/portfolio/img/GDA/File1.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/GDA/File1.jpg" alt="GDA">
+                </div>
+                <div class="st-portfolio-item-hover">
+                  <i class="fas fa-plus-circle"></i>
+                  <h5>GDA</h5>
+                  <p>Design / Marketing</p>
+                </div>
+              </a>
+              <script>
+                for (let i = 2; i < 6; i++) {
+
+                  let name = "GDA";
+                  document.write(`
+              <a href="assets/portfolio/img/`+ name + `/File` + i + `.jpg" class="st-portfolio st-zoom st-lightbox-item">
+                <div class="st-portfolio-img st-zoom-in">
+                  <img src="assets/portfolio/img/`+ name + `/File` + i + `.jpg" alt="` + name + `">
+                </div>
+              </a>
+              `);
+                }
+              </script>
+            </div>
+>>>>>>> f846939b603f0ee8749492b97e6ffb9e9e51361d
           </div>
         </div>
       </div>
@@ -1154,26 +1736,6 @@
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Portfolio Seciton -->
-  <script>
-    const path = 'assets/portfolio/img/';
-    const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-    fetch(path)
-      .then(response => response.text())
-      .then(html => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const imageElements = doc.querySelectorAll('img');
-        imageElements.forEach(imageElement => {
-          const imageUrl = imageElement.src;
-          if (allowedExtensions.some(ext => imageUrl.endsWith(ext))) {
-            // Create a new image element with the same source
-            const newImg = document.createElement('img');
-            newImg.src = imageUrl;
-            document.querySelector('#container').appendChild(newImg);
-          }
-        });
-      });
-  </script>
   <section class="st-dark-bg">
     <div class="st-height-b100 st-height-lg-b80"></div>
     <div class="container">
