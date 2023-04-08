@@ -2054,7 +2054,7 @@ canvas {
 
 .pagination.st-style2 {
   position: absolute;
-  bottom: 17px;
+  bottom: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3208,4 +3208,11 @@ canvas {
 .web {
   height: 173.1px;
   overflow: scroll;
+}
+
+.clients {
+  filter: grayscale(100%);
+  width: 440px;
+  justify-content: center;
+  height: auto;
 }
