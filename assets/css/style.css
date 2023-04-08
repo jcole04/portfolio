@@ -3211,8 +3211,16 @@ canvas {
 }
 
 .clients {
-  filter: grayscale(100%);
+  filter: brightness(100);
+  opacity: 70%;
   width: 440px;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.wrapper {
   justify-content: center;
-  height: auto;
+  height: 100px;
 }
