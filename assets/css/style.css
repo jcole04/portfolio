@@ -3204,3 +3204,8 @@ canvas {
 .st-portfolio-single .st-portfolio-item a:not(:first-child) {
   display: none;
 }
+
+.web {
+  height: 173.1px;
+  overflow: scroll;
+}
