@@ -2310,7 +2310,16 @@ canvas {
   width: 100%;
 }
 
+.st-post-info {
+  margin: 2%;
+}
+
+.st-post-date {
+  text-align: center;
+}
+
 .st-post-single.st-style1 .st-post-date {
+
   font-size: 14px;
   margin-top: 22px;
   margin-bottom: 9px;
@@ -3206,8 +3215,12 @@ canvas {
 }
 
 .web {
-  height: 173.1px;
+  height: 25vw;
   overflow: scroll;
+}
+
+.web img {
+  padding: 0 20% 0;
 }
 
 .clients {
