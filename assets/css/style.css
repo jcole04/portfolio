@@ -3219,6 +3219,10 @@ canvas {
   overflow: scroll;
 }
 
+.web ::-webkit-scrollbar {
+  display: none;
+}
+
 .web img {
   padding: 0 20% 0;
 }
