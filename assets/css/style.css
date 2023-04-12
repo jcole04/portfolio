@@ -3219,7 +3219,7 @@ canvas {
   overflow: scroll;
 }
 
-.web ::-webkit-scrollbar {
+.web::-webkit-scrollbar {
   display: none;
 }
 
